@@ -1,6 +1,5 @@
 import Logo from "./components/Logo.jsx";
-import { DocsThemeConfig } from "nextra-theme-docs";
-import { useConfig } from "nextra-theme-docs";
+import Head from "./components/Head.jsx";
 
 const config = {
   logo: <Logo />,
@@ -31,6 +30,20 @@ const config = {
   editLink: {
 		content: null,
 	},
+  head: <Head />,
+  useNextSeoProps() {
+    return {
+      title: "FOSS UOK",
+      description: "This is design guidelines for FOSS Community University of Kelaniya",
+      openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "https://fossuok.org",
+        site_name: "FOSS UOK",
+      },
+    }
+  },
+  faviconGlyph: "📚" ,
 };
 
 export default config;
