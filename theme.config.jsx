@@ -1,7 +1,7 @@
 export default {
-    logo: <span>My Nextra Documentation</span>,
+    logo: <span>FOSSUOK design Guidelines</span>,
     project: {
-      link: 'https://github.com/shuding/nextra'
+      link: 'https://github.com/fossuok'
     }
     // ... other theme options
   }
