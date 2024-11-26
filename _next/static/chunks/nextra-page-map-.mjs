@@ -14,6 +14,13 @@ export const pageMap = [{
   children: [{
     data: component_meta
   }, {
+    name: "actionBar",
+    route: "/component/actionBar",
+    frontMatter: {
+      "title": "BlogCard",
+      "description": "BlogCard's UI for your blog or news website."
+    }
+  }, {
     name: "mydoc",
     route: "/component/mydoc",
     frontMatter: {
