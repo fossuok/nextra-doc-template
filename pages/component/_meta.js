@@ -1,5 +1,6 @@
 const meta = {
-    mydoc: "My Document"
+    "mydoc": "My Document",
+    "actionBar": "Action Bar",
 }
 
 export default meta;
