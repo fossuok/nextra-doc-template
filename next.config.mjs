@@ -22,7 +22,7 @@ export default withNextra({
   output: 'export',
 
   // Support for GitHub Pages
-  basePath: isProd ? '/nextra-doc-template' : '', // Replace <REPOSITORY_NAME> with your GitHub repo name
+  basePath: isProd ? '/nextra-doc-template' : '',
   assetPrefix: isProd ? '/nextra-doc-template' : '',
 
   // Required if you're using next/image
