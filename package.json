@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"**/*.mdx\" --no-ignore",
+    "lint:mdx": "eslint \"pages/**/*.mdx\" --no-ignore && remark . --ext .mdx && cat status.txt || cat failure.txt",
+    "test": "npm run lint:mdx"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -19,5 +21,12 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "tailwindcss": "^3.4.15"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-plugin-mdx": "^3.1.5",
+    "remark-cli": "^12.0.1",
+    "remark-lint": "^10.0.0",
+    "remark-preset-lint-recommended": "^7.0.0"
   }
 }
