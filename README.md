@@ -1,38 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FOSS Community University of Kelaniya - Design Guidelines
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img
+        src="https://raw.githubusercontent.com/fossuok/.github/main/profile/foss_logo_l_dark_800px.png"
+        alt="FOSS Logo"
+        width="350px"
+    />
+</div>
+
+Welcome to the documentation site for the design guidelines of the FOSS Community at the University of Kelaniya. This repository contains all the necessary guidelines and best practices for design within our community.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/fossuok/nextra-doc-template.git
+
+   cd nextra-doc-template
+   ```
+
+2. **Install dependancies**
+
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+4. **Build the project**
+
+    ```bash
+    npm run build
+    ```
+
+## Testing
+
+Before contributing, please make sure all test cases pass. Run the following command to check for test cases
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm run test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
+We welcome contributions from everyone. To contribute, follow these steps
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. *Fork the repository*
+2. *Create a new branch*
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+git checkout -b feature/your-feature-name
+```
+3. *Make your changes*
+4. *Commit your changes*
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+git commit -m "Add your commit message"
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. *Push to the branch*
+```bash
+git push origin feature/your-feature-name
+```
 
-## Learn More
+6. *Create a pull request*
 
-To learn more about Next.js, take a look at the following resources:
+    Please ensure your code adheres to the project's coding standards and passes all linting and test checks.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributors ❤️
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Thank you to all our contributors! If you'd like to contribute, please feel free to submit a pull request.
 
-## Deploy on Vercel
+## License
+This project is licensed under the `MIT License`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any questions or need further assistance, feel free to open an issue or contact the maintainers.
+
+### 🎊 Happy coding! 🎊
