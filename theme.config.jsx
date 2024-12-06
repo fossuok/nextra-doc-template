@@ -43,7 +43,6 @@ const config = {
       },
     }
   },
-  faviconGlyph: "📚" ,
 };
 
 export default config;
