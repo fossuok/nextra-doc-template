@@ -3,6 +3,7 @@ const meta = {
     about: "About Us",
     component: "Component",
     colors: "Colors",
-}
+    typography: "Typography",
+};
 
 export default meta;
