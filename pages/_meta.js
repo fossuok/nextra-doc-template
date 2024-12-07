@@ -1,8 +1,8 @@
 const meta = {
     index: "Introduction",
     about: "About Us",
+    guidance: "Guidance",
     component: "Component",
-    colors: "Colors",
 }
 
 export default meta;
