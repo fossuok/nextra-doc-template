@@ -3,6 +3,8 @@ const meta = {
     about: "About Us",
     guidance: "Guidance",
     component: "Component",
+    colors: "Colors",
+    typography: "Typography",
 }
 
 export default meta;
