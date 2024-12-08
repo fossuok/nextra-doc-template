@@ -1,0 +1,124 @@
+# Typography
+
+This guide defines the fonts, sizes, weights, and usage patterns to ensure consistent readability and design throughout the interface.
+
+## Font Family
+
+- **Primary Font**: `Inter`  
+  Serves as the default font for headings, body text, buttons, and most UI elements.
+
+- **Fallback Fonts**: `Arial`, `sans-serif`  
+  Provide a fallback for environments where the primary font is unavailable.
+
+**CSS Declaration**
+
+```css
+:root {
+    --font-primary: "Inter", Arial, sans-serif;
+}
+```
+
+### Usage Example
+
+```css
+body {
+    font-family: var(--font-primary);
+}
+```
+
+## Font Size
+
+A modular scale is used for font sizes to establish a clear visual hierarchy and improve readability.
+
+**Scale**
+| **Role** | **Font Size** | **Line Height** | **Usage** |
+|-----------------------|---------------|-----------------|----------------------------------------|
+| Display Heading (H1) | 48px | 1.2 | Major page headers, hero sections. |
+| Section Heading (H2) | 36px | 1.3 | Section titles. |
+| Subheading (H3) | 24px | 1.4 | Subsection headers. |
+| Body Text | 16px | 1.6 | Main content and paragraphs. |
+| Small Text | 14px | 1.6 | Captions and secondary information. |
+| Tiny Text | 12px | 1.5 | Footnotes and disclaimers. |
+
+**CSS Variables**
+
+```css
+:root {
+    --font-size-display: 3rem; /* 48px */
+    --font-size-heading: 2.25rem; /* 36px */
+    --font-size-subheading: 1.5rem; /* 24px */
+    --font-size-body: 1rem; /* 16px */
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-tiny: 0.75rem; /* 12px */
+}
+```
+
+### Usage Example
+
+```css
+h1 {
+    font-size: var(--font-size-display);
+    line-height: 1.2;
+}
+
+p {
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+}
+```
+
+## Font Weights
+
+**Weights**
+| **Name** | **Value** | **Usage** |
+|-----------|-----------|-------------------------------|
+| Regular | 400 | Body text and general content.|
+| Medium | 500 | Subheadings or semi-emphasis. |
+| Bold | 700 | Headings and highlighted content. |
+
+**CSS Variables**
+
+```css
+:root {
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+```
+
+### Usage Example
+
+```css
+h1 {
+    font-weight: var(--font-weight-bold);
+}
+
+p {
+    font-weight: var(--font-weight-regular);
+}
+```
+
+## Text Alignment
+
+**Alignment Options**
+| **Alignment** | **CSS Property** | **Usage** |
+|------------------|------------------------|-----------------------------------------------|
+| Left-Aligned | `text-align: left;` | Default for paragraphs and headers. |
+| Center-Aligned | `text-align: center;` | Titles, banners, and hero sections. |
+| Right-Aligned | `text-align: right;` | Rare cases, e.g., metadata or special UI elements. |
+
+**CSS Classes**
+
+```css
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+```
