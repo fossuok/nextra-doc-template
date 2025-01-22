@@ -34,6 +34,13 @@ export const pageMap = [{
       "component": "Alert"
     }
   }, {
+    name: "banner",
+    route: "/component/banner",
+    frontMatter: {
+      "title": "Banner Design Guidelines",
+      "component": "Banner"
+    }
+  }, {
     name: "button",
     route: "/component/button",
     frontMatter: {
@@ -46,6 +53,13 @@ export const pageMap = [{
     frontMatter: {
       "title": "Card Design Guidelines",
       "component": "Card"
+    }
+  }, {
+    name: "carousel",
+    route: "/component/carousel",
+    frontMatter: {
+      "title": "Progress bar Design Guidelines",
+      "component": "Progress bar"
     }
   }, {
     name: "footer",
@@ -62,6 +76,13 @@ export const pageMap = [{
       "component": "Form Input"
     }
   }, {
+    name: "form",
+    route: "/component/form",
+    frontMatter: {
+      "title": "Form custamization Guidelines",
+      "component": "Form"
+    }
+  }, {
     name: "modal",
     route: "/component/modal",
     frontMatter: {
@@ -74,6 +95,20 @@ export const pageMap = [{
     frontMatter: {
       "title": "Navigation Guidelines",
       "component": "Navigation"
+    }
+  }, {
+    name: "progressBar",
+    route: "/component/progressBar",
+    frontMatter: {
+      "title": "Progress bar Design Guidelines",
+      "component": "Progress bar"
+    }
+  }, {
+    name: "unifiedField",
+    route: "/component/unifiedField",
+    frontMatter: {
+      "title": "Unified Form Inputs",
+      "component": "Labels, Radio Buttons and Checkboxes"
     }
   }]
 }, {
