@@ -1,0 +1,35 @@
+---
+title: Form custamization Guidelines
+component: Form 
+---
+
+# Forms
+
+Forms allow users to input data that is sent to a server for processing.
+
+## Usage
+
+Forms can be used for a variety of purposes, including survey, collecting information, and feedback. 
+
+## Code Example
+
+```jsx copy
+<FormControl required>
+  <FormControl.Label>
+    Form Input Label
+  </FormControl.Label>
+  <Checkbox />
+</FormControl>
+```
+
+## Accessibility
+
+- Use `aria-describedby` to associate inputs with error or helper messages.
+
+```jsx copy
+<span id="email-error">Invalid email address</span>
+<input aria-describedby="email-error" />
+```
+- Add form controls according to the situation
+- for more info visit - [Primer Form controls](https://primer.style/components/form-control)
+
