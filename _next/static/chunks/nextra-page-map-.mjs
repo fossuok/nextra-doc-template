@@ -9,6 +9,12 @@ export const pageMap = [{
     "sidebarTitle": "About"
   }
 }, {
+  name: "colors",
+  route: "/colors",
+  frontMatter: {
+    "sidebarTitle": "Colors"
+  }
+}, {
   name: "component",
   route: "/component",
   children: [{
@@ -68,13 +74,6 @@ export const pageMap = [{
     frontMatter: {
       "title": "Navigation Guidelines",
       "component": "Navigation"
-    }
-  }, {
-    name: "typography",
-    route: "/component/typography",
-    frontMatter: {
-      "title": "Typography Guidelines",
-      "component": "Typography"
     }
   }]
 }, {
