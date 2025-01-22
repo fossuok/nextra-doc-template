@@ -9,10 +9,10 @@ const meta = {
     "form-inputs": "Form Inputs",
     "modal": "Modal",
     "navigation": "Navigation",
-    "progressBar":"Progress Bar",
+    "progressBar": "Progress Bar",
     "footer": "Footer",
     "typography": "Typography",
-    "unifiedField": "Unified Fields",
-}
+    "unifiedField": "Unified Fields"
+};
 
 export default meta;
