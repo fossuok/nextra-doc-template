@@ -7,7 +7,6 @@ const meta = {
     "modal": "Modal",
     "navigation": "Navigation",
     "footer": "Footer",
-    "typography": "Typography",
 }
 
 export default meta;
