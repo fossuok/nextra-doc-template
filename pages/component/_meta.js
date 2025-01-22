@@ -11,7 +11,6 @@ const meta = {
     "navigation": "Navigation",
     "progressBar": "Progress Bar",
     "footer": "Footer",
-    "typography": "Typography",
     "unifiedField": "Unified Fields"
 };
 
