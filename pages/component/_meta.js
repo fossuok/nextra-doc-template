@@ -4,6 +4,7 @@ const meta = {
     "banner": "Banner",
     "button": "Button",
     "card": "Card",
+    "carousel": "Carousel",
     "form": "Form",
     "form-inputs": "Form Inputs",
     "modal": "Modal",
