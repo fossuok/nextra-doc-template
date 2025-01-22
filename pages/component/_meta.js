@@ -8,6 +8,7 @@ const meta = {
     "form-inputs": "Form Inputs",
     "modal": "Modal",
     "navigation": "Navigation",
+    "progressBar":"Progress Bar",
     "footer": "Footer",
     "typography": "Typography",
 }
