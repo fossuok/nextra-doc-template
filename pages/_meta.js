@@ -4,6 +4,7 @@ const meta = {
     guidance: "Guidance",
     component: "Component",
     typography: "Typography",
+    colors: "Colors",
 }
 
 export default meta;
