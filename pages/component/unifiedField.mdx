@@ -1,0 +1,160 @@
+---
+title: Unified Form Inputs
+component: Labels, Radio Buttons and Checkboxes
+---
+
+
+# Unified Form Inputs
+
+This template consolidates the **Label**, **Radio**, and **Checkbox** components into one unified, easy-to-understand structure. It provides clear guidelines, usage examples, and best practices for implementing these components effectively.  
+
+---
+
+## Purpose
+
+Use this template to design consistent form controls for single or multiple selections (**radio buttons**, **checkboxes**) and for contextual metadata display (**labels**). This approach ensures reusability and simplicity in design.
+
+---
+
+## Sub-Components
+
+### Label
+
+Labels provide textual context to form controls, improving clarity and accessibility.
+
+- **Variants**:
+  - **Default**: Neutral styling.
+  - **Colored**: Variants like primary, success, danger for contextual emphasis.
+
+- **Code Example**:
+  ```jsx
+  <Label variant="success" size="large">Success</Label>
+  ```
+
+- **Props**:
+  | Prop    | Default    | Description                  |
+  |---------|------------|------------------------------|
+  | variant | `default`  | Style variant of the label.  |
+  | size    | `small`    | Render size: `small` or `large`. |
+
+---
+
+### Radio
+
+Radio buttons allow users to make a **single selection** from a group of options.
+
+- **Usage**:
+  - Use in a group context only.
+  - Implement validation at the group level.
+
+- **Code Example**:
+  ```jsx
+  <div role="radiogroup" aria-labelledby="radio-group-label">
+    <label>
+      <input type="radio" name="choice" value="option1" /> Option 1
+    </label>
+    <label>
+      <input type="radio" name="choice" value="option2" /> Option 2
+    </label>
+  </div>
+  ```
+
+- **Props**:
+  | Prop            | Default    | Description                              |
+  |-----------------|------------|------------------------------------------|
+  | value           | Required   | Unique value used during form submission. |
+  | name            | Required   | Groups related radios together.         |
+  | checked         | `false`    | Controlled state for the radio.         |
+  | defaultChecked  | `false`    | Uncontrolled state for the radio.       |
+  | disabled        | `false`    | Makes the radio button non-interactive. |
+  | onChange        |            | Callback triggered when state changes.  |
+
+---
+
+### Checkbox
+
+Checkboxes allow users to select one or multiple options. They support three states: checked, unchecked, and indeterminate.
+
+- **Usage**:
+  - Use for multiple selections or to toggle individual items.
+  - Implement validation for the group instead of individual checkboxes.
+
+- **Code Example**:
+  ```jsx
+  <div>
+    <label>
+      <input type="checkbox" value="option1" /> Option 1
+    </label>
+    <label>
+      <input type="checkbox" value="option2" /> Option 2
+    </label>
+  </div>
+  ```
+
+- **Props**:
+  | Prop            | Default    | Description                                  |
+  |-----------------|------------|----------------------------------------------|
+  | checked         | `false`    | Controlled state for the checkbox.          |
+  | defaultChecked  | `false`    | Initial state for the checkbox.             |
+  | indeterminate   | `false`    | Sets the indeterminate state for the checkbox. |
+  | disabled        | `false`    | Makes the checkbox non-interactive.         |
+  | onChange        |            | Callback triggered when state changes.      |
+  | value           |            | Unique value used during form submission.   |
+
+---
+
+## Unified Code Example
+
+Here’s a complete example combining **Label**, **Radio**, and **Checkbox** into one form.
+
+```jsx
+<div>
+  <h3>Unified Input Example</h3>
+
+  {/* Label */}
+  <Label variant="primary" size="large">Form Title</Label>
+
+  {/* Radio Group */}
+  <fieldset>
+    <legend>Select your preferred option:</legend>
+    <label>
+      <input type="radio" name="preference" value="option1" /> Option 1
+    </label>
+    <label>
+      <input type="radio" name="preference" value="option2" /> Option 2
+    </label>
+  </fieldset>
+
+  {/* Checkbox Group */}
+  <fieldset>
+    <legend>Select your hobbies:</legend>
+    <label>
+      <input type="checkbox" value="reading" /> Reading
+    </label>
+    <label>
+      <input type="checkbox" value="traveling" /> Traveling
+    </label>
+    <label>
+      <input type="checkbox" value="coding" /> Coding
+    </label>
+  </fieldset>
+</div>
+```
+
+---
+
+## Best Practices
+
+1. **Group Context**:
+   - Always render radios and checkboxes in a group with proper labels for accessibility.
+   - Use `fieldset` and `legend` for better grouping semantics.
+
+2. **Validation**:
+   - Display validation errors for groups, not individual inputs.
+   - Ensure proper contrast and focus states.
+
+3. **Accessibility**:
+   - Provide clear labels and use `aria-labelledby` or `aria-describedby` where needed.
+   - Enable keyboard navigation.
+
+---
