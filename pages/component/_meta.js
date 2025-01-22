@@ -1,6 +1,7 @@
 const meta = {
     "actionBar": "Action Bar",
     "alerts": "Alert",
+    "banner": "Banner",
     "button": "Button",
     "card": "Card",
     "form": "Form",

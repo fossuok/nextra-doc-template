@@ -1,0 +1,57 @@
+---
+title: Banner Design Guidelines
+component: Banner
+---
+
+# Banners
+
+Banners are used to communicate important messages or statuses prominently. 
+
+## Variants
+
+- **Default Banner**: A standard banner with a neutral tone.
+
+```jsx copy
+<div class="Banner">
+  <div class="Banner-header">Default Banner</div>
+  <div class="Banner-body">This is a neutral banner.</div>
+</div>
+```
+
+- **Success Banner**: Indicates successful actions or statuses.
+
+```jsx copy
+<div class="Banner Banner--success">
+  <div class="Banner-header">Success Banner</div>
+  <div class="Banner-body">Your operation was successful.</div>
+</div>
+```
+
+- **Warning Banner**: Alerts users to potential issues.
+
+```jsx copy
+<div class="Banner Banner--warning">
+  <div class="Banner-header">Warning Banner</div>
+  <div class="Banner-body">Be cautious about this action.</div>
+</div>
+```
+
+- **Error Banner**: Highlights critical problems or errors.
+
+```jsx copy
+<div class="Banner Banner--error">
+  <div class="Banner-header">Error Banner</div>
+  <div class="Banner-body">Something went wrong!</div>
+</div>
+```
+
+## Accessibility
+
+- **Import**
+```jsx copy
+import {Banner} from '@primer/react/experimental'
+```
+
+Ensure banners appear prominently for screen readers 
+- using `aria-live="polite"` for non-urgent messages 
+- using `aria-live="assertive"` for critical issues.
