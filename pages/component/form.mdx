@@ -24,9 +24,11 @@ Forms can be used for a variety of purposes, including survey, collecting inform
 
 ## Accessibility
 
-- **Import**
+- Use `aria-describedby` to associate inputs with error or helper messages.
+
 ```jsx copy
-import {FormControl} from '@primer/react'
+<span id="email-error">Invalid email address</span>
+<input aria-describedby="email-error" />
 ```
 - Add form controls according to the situation
 - for more info visit - [Primer Form controls](https://primer.style/components/form-control)
