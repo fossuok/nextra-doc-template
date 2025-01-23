@@ -22,8 +22,8 @@ export default withNextra({
   output: 'export',
 
   // Support for GitHub Pages
-  basePath: isProd ? '/nextra-doc-template' : '',
-  assetPrefix: isProd ? '/nextra-doc-template' : '',
+  basePath: '',
+  assetPrefix: '',
 
   // Required if you're using next/image
   images: {
