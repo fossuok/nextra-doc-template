@@ -5,7 +5,7 @@ const meta = {
     contribute: "How to Contribute",
     colors: "Colors",
     typography: "Typography",
-    component: "Component",
+    components: "Components",
 }
 
 export default meta;

@@ -1,0 +1,109 @@
+**Guide to Using Mantine UI with Primer Design**
+
+Mantine UI is our chosen component library for building the **FOSS_Official_Website**. To maintain design consistency, we align all Mantine components with **Primer Design**, GitHub’s design system. This guide explains how to integrate Mantine UI components while ensuring they adhere to Primer Design principles.
+
+---
+
+## **1. Understanding the Design Alignment**
+
+- **Mantine UI** provides flexible, customizable React components.
+- **Primer Design** offers a structured design language that maintains consistency.
+- We use **Mantine UI components** while applying **Primer’s styles, spacing, and accessibility standards**.
+
+---
+
+## **2. Installing Mantine UI**
+
+If Mantine UI is not already installed, add it to your project:
+
+```sh
+npm install @mantine/core @mantine/hooks
+```
+
+For icons:
+
+```sh
+npm install @mantine/icons
+```
+
+---
+
+## **3. Applying Primer Design to Mantine Components**
+
+Mantine components are styled using built-in props, but we customize them to match Primer Design. Here’s how:
+
+
+### **Buttons**
+Customize Mantine buttons to match Primer’s button styles:
+
+```tsx
+import { Button } from '@mantine/core';
+
+<Button size="sm" radius="xl" styles={{
+  root: { backgroundColor: '#1f6feb', color: 'white', fontWeight: 600 }
+}}>
+  Primer-Styled Button
+</Button>
+```
+
+### **Cards**
+Align Mantine’s `Card` component with Primer’s design system:
+
+```tsx
+import { Card, Text } from '@mantine/core';
+
+<Card shadow="sm" padding="lg" radius="md" style={{ backgroundColor: '#f6f8fa' }}>
+  <Text weight={600}>Primer-Styled Card</Text>
+</Card>
+```
+
+---
+
+## **4. Using Primer’s Utility Classes in Mantine**
+
+Primer provides utility classes for spacing, flexbox, and colors. These can be applied within Mantine’s `sx` prop:
+
+```tsx
+<Box sx={{ display: 'flex', gap: '16px', padding: '16px' }}>
+  <Button>Button 1</Button>
+  <Button>Button 2</Button>
+</Box>
+```
+
+---
+
+## **5. Ensuring Accessibility and Responsiveness**
+
+- Use **Mantine’s accessibility hooks** to ensure WCAG compliance.
+- Use **Primer’s responsive spacing and color contrast**.
+- Ensure all interactive elements have proper `aria-labels`.
+
+---
+
+## **6. Theming Mantine to Match Primer**
+
+We can override Mantine’s default theme to match Primer Design:
+
+```tsx
+import { MantineProvider } from '@mantine/core';
+
+<MantineProvider theme={{
+  colors: { primary: ['#1f6feb'] },
+  fontFamily: 'Inter, sans-serif'
+}}>
+  <App />
+</MantineProvider>
+```
+
+---
+
+## **7. Final Checklist for UI Consistency**
+
+✔ Use Mantine components with Primer-aligned styles.  
+✔ Lot of templates are available in Mantine UI library, Use them accordingly.  
+✔ Follow Primer’s spacing, colors, and typography.  
+✔ Apply responsive and accessible design principles.  
+✔ Ensure proper component theming.  
+
+By following these guidelines, we ensure that our website remains visually consistent while leveraging Mantine’s powerful component system. Happy coding! 🚀
+
