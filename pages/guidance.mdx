@@ -1,48 +1,49 @@
 ---
-title: Guidance for Developers
+title: Guidance for Contributors
 ---
 
-# Primer Design for Developers
+# Introduction to Website Design
 
-## What is Primer Design?
-Primer Design is a design system created by GitHub to build consistent, accessible, and aesthetically pleasing user interfaces. It provides tools, principles, and components to streamline web development and ensure design consistency across projects.
+Welcome to the contributor's guide for FOSS UoK website! We follow the **Primer Design** system, which is GitHub’s design system. Primer provides a consistent and accessible user experience across different platforms. If you’re a beginner looking to contribute, this document will help you understand the key principles and guidelines to follow.
 
-For more details, visit the [Primer Design Official Website](https://primer.style/).
-
----
-
-## Why Use Primer Design?
-
-1. **Consistency**: 
-   - Primer ensures a unified look and feel across your website by providing standardized components and utilities.
-   - Example: Buttons, typography, and spacing align seamlessly, creating a professional and cohesive UI.
-
-2. **Accessibility**:
-   - Built with accessibility best practices in mind, Primer helps make your website inclusive for all users.
-   - Example: Components come with ARIA roles, focus management, and color contrast ratios that meet WCAG guidelines.
-
-3. **Efficiency**:
-   - With prebuilt, reusable components and utilities, Primer reduces development time and effort.
-   - Example: Quickly add responsive layouts or modals without starting from scratch.
-
-4. **Customization**:
-   - Primer's flexible design system allows you to extend and adapt its styles to match your project’s branding needs.
-   - Example: Easily modify colors, typography, or layouts while maintaining design consistency.
+We also use [**Mantine UI**](https://mantine.dev/) for our components and ensure they are aligned with Primer Design principles.
 
 ---
 
-## Primer Design Basics
-
-- **Colors**: Primer provides a carefully crafted color palette that includes background, text, and accent colors.
-- **Typography**: Use consistent font styles for headings, paragraphs, and UI elements.
-- **Spacing**: Utilize spacing utilities for padding and margins.
-- **Components**: Leverage pre-built components like buttons, navigation bars, and modals.
-
+![Example design](/primer_design.webp)
 
 ---
 
-## Adding a Primer Component to the Project
+## Guidelines for Contributors
 
-You can see the components and how to use those in [Component](https://primer.style/guides/status).
+### 1. Follow the Primer Styling
+- Instead of using default Primer components, we used **Mantine UI components** to develop website.
+- Ensure that **Mantine UI components** are styled and customized to align with Primer Design.
+- Follow the typography and spacing conventions defined in Primer.
 
-And also, you can look into more details about how to function and customize those components in the storybook provided by Primer Design. [View in Storybook](https://primer.style/react/storybook)
+### 2. Maintain Consistency
+- Stick to the defined color palette and UI elements.
+- Ensure buttons, inputs, and navigation bars match the existing style.
+- When using **Mantine UI components**, apply Primer-compatible styles and configurations.
+
+### 3. Accessibility Matters
+- Always ensure proper **contrast, focus states, and keyboard navigability**.
+- Use **ARIA attributes** where necessary to improve usability.
+
+### 4. Responsive Design
+- Ensure the website looks good on different screen sizes.
+- Use flexible grid layouts and avoid fixed widths.
+
+### 5. Code Standards
+- Keep code **clean and well-documented**.
+- Follow **semantic HTML** principles and use **BEM naming convention** for CSS.
+
+### 6. Testing & Review
+- Before submitting a pull request, test your changes in both **light and dark modes**.
+- Ensure no breaking changes in existing components.
+- Verify that **Mantine UI components** function correctly and maintain the Primer Design look and feel.
+
+---
+
+By following these guidelines, you can contribute effectively while maintaining the integrity of our website’s design. Happy coding!
+
